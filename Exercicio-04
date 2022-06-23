@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int vet1[10],vet2[10],vet3[10],i,n;
+	
+		printf("Quantidade de elementos do vetor: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++){
+		printf("\nVetor[%d]:",i);
+		scanf("%d",&vet1[i]);
+	}	
+	for(i=0;i<n;i++){
+		printf("\nVetor 2 [%d]:",i);
+		scanf("%d",&vet2[i]);
+	}	
+		
+		printf("\n*Multiplicacao dos elementos de mesmo indice*\n");
+		
+		for(i=0;i<n;i++){
+		vet3[i] = vet1[i] * vet2[i];
+		printf("Vet 1 [%d] * Vet 2 [%d] = Vet 3 [%d]\n",vet1[i],vet2[i],vet3[i]);
+	}
+}
