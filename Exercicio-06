@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int vet[10],i,n;
+	float soma=0,media=0;
+	
+	printf("Quantidade de elementos do vetor: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++){
+		printf("\nAltura[%d]:",i);
+		scanf("%d",&vet[i]);
+		soma+=vet[i];
+	}	
+		media = soma / n;
+		
+		printf("\n\n*Imprimindo pessoas que possuem altura maior que a media*\n");
+		printf("\nA media das alturas = %.2f\n",media);
+			for(i=0;i<n;i++){
+				if(vet[i]>media){
+				printf("\nA pessoa [%d] possui altura maior que a media: %d",i,vet[i]);
+			}
+		}	
+
+
+
+
+}
