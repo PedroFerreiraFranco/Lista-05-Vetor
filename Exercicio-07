@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int vet[10],i,n,busca,encontrou,cont=0;
+	
+		printf("Quantidade de elementos do vetor: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++){
+		printf("Vetor[%d]:",i);
+		scanf("%d",&vet[i]);
+	}	
+		printf("\n*Calcular quantidade de vezes que um valor foi repetido*\n");
+		
+		printf("\nValor para busca:");
+		scanf("%d",&busca);
+		encontrou=0;
+		
+		for(i=0;i<n;i++){
+			if(busca==vet[i]){
+			cont++;		
+			encontrou=1;		
+				}
+			}
+			if(!encontrou)
+			printf("Valor nao encontrado no vetor\n");
+			else
+			printf("\nValor %d foi encontrado %dx",busca,cont++);
+
+
+}
+
+	
