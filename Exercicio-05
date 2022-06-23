@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int vet[100],vet2[100],i,n;
+	float x;
+	
+		printf("Quantidade de elementos do vetor: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++){
+		printf("\nVetor[%d]:",i);
+		scanf("%d",&vet[i]);
+	}	
+	printf("\nDigite o valor de X: ");
+	scanf("%f",&x);
+	
+		printf("\n*Multiplicacao dos elementos do primeiro vetor por X*\n");
+		
+		for(i=0;i<n;i++){
+		vet2[i] = vet[i] * x;
+		printf("Vet 1 [%d] * %.f = Vet B [%d]\n",vet[i],x,vet2[i]);
+		}
+	}	
+		
