@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-	int vet[15],i,n;
+	int vet[10],i,n;
 	
 		printf("Quantidade de elementos do vetor: ");
 	scanf("%d",&n);
