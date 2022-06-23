@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int vet[10],i,n,contPar=0;
+	printf("Quantidade de elementos do vetor: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++){
+		printf("Vetor[%d]:",i);
+		scanf("%d",&vet[i]);
+	}//fim for leia vetor
+	
+	printf("\n*Vetor recebido*\n");
+	
+	for(i=0;i<n;i++){
+		printf("%d |",vet[i]);
+			if(vet[i] % 2 == 0){
+			contPar++;
+		}
+	}
+	printf("\nQuantidade numeros pares: %d",contPar);
+}
