@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int vet[15],i,n,negativo;
+	
+		printf("Quantidade de elementos do vetor: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++){
+		printf("Vetor[%d]:",i);
+		scanf("%d",&vet[i]);
+	}	
+		
+		printf("\n*Checando somente os negativos*\n");
+		for(i=0;i<n;i++){
+			if(vet[i] < 0){
+			printf("\nO numero %d eh negativo",vet[i]);
+			}
+		}
+	}
